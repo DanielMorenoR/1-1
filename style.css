@@ -1,0 +1,199 @@
+.start {
+background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  gap: 1em;
+}
+.start h1{
+  color: white;
+}
+
+.start ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+body{
+  margin: 0;
+}
+.location{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.body1 {
+  color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;   
+text-align: center;
+margin: 0;
+padding-top: 1em;
+background-image: url("pics/html.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 25em;
+padding: 2em;
+}
+.box {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 2em;
+}
+.gallery {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 1em;
+  margin: 0 0 2em;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.aPic {
+  margin: 0;
+  min-width: 0;
+}
+.aPic h2 {
+  margin: 0 0 10px;
+}
+
+.aPic img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.pictures figcaption {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .pictures {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .pictures{
+    grid-template-columns: 1fr;
+  }
+}
+.big {
+  display: block;
+  width: 100%;
+  height: 35em;
+}
+
+}
+.image {
+  width: calc(100% - 2em);
+  margin: 0 auto 2em;
+  padding: 0;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  background-image: url(pics/computer.jpg); /* la imagen grande del ejemplo, no computer.jpg */
+  background-size: cover;
+  background-position: center;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2em;
+  width: min(90%, 700px);
+  margin: 0 auto 2em;
+  justify-items: center;
+}
+
+.skill {
+  width: 100%;
+  max-width: 300px;
+  margin: 0;
+}
+
+.skill h2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+.skill img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #d6d4c4; /* el beige del ejemplo */
+}
+
+@media (max-width: 600px) {
+  .code {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill p {
+  width: 100%;
+  margin: 8px 0 0;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.summary {
+  width: calc(100% - 2em);
+  margin: 0 auto 2em;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.summary img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover; /* si son logos y no quieres que se recorten, usa contain */
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+  font-size: 0.8em;
+}
+
+footer p {
+  margin: 0.6em 0;
+}
+
+footer a {
+  color: #d2691e;   /* el naranja del ejemplo */
+  text-decoration: none;
+}
